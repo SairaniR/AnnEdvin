@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".AddActivity"
+    android:background="#CAB0B0">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#524F4F"
+        app:title="ZEAL"
+        app:titleMarginStart="40dp"
+        app:logo="@drawable/ic_black"
+        android:paddingTop="0dp"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#CAB0B0">
+
+
+        <EditText
+            android:id="@+id/editTextGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/gender" />
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextGender"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/age" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAge"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/number" />
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_toEndOf="@+id/editTextGender"
+            android:layout_toRightOf="@+id/editTextGender"
+            android:text=""
+            android:background="@drawable/textview_border"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:background="@drawable/textview_border"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/textViewGender"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_toEndOf="@+id/editTextName"
+            android:layout_toRightOf="@+id/editTextName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="40dp"
+            android:layout_toEndOf="@+id/editTextAge"
+            android:layout_toRightOf="@+id/editTextAge"
+            android:background="@drawable/textview_border"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/textViewAge"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="40dp"
+            android:layout_toEndOf="@+id/editTextNumber"
+            android:layout_toRightOf="@+id/editTextNumber"
+            android:background="@drawable/textview_border"
+            android:text="" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CAB0B0">
+
+        <EditText
+            android:id="@+id/editTextItemsPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/items_purchased" />
+        <TextView
+            android:id="@+id/textViewItemsCount"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/editTextItemsPurchased"
+           android:layout_marginStart="45dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/textview_border"
+            android:text=""/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemsCount"
+            android:layout_centerHorizontal="true"
+            android:text="Add"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

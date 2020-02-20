@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="#F0E2E6">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#524F4F"
+        app:title="ZEAL"
+        app:titleMarginStart="40dp"
+        app:logo="@drawable/ic_black"
+        android:paddingTop="0dp"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:singleLine="false"
+
+            android:textColor="#000"
+            android:textColorHighlight="#524F4F"
+            android:textColorHint="#524F4F"
+            android:textColorLink="#524F4F" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/modifyButton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modify"
+            android:layout_below="@id/addButton"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_below="@id/modifyButton"/>
+
+    </RelativeLayout>
+</LinearLayout>

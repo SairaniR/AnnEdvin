@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ZeRec</string>
+    <string name="Mobile">Enter Mobile No</string>
+    <string name="delete">Delete</string>
+    <string name="modify">Modify</string>
+    <string name="add">add</string>
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="gender">Gender</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="number">number</string>
+    <string name="items_purchased">Items Purchased</string>
+
+
+</resources>
